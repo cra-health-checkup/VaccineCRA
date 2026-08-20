@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ระบบเก็บข้อมูลวัคซีนและภูมิคุ้มกันบุคลากร</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-title">ระบบวัคซีนบุคลากร</div>
+      <div class="brand-sub">Staff Vaccination &amp; Immunity Tracker</div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="sidebar-footer">
+      <button id="resetDataBtn" class="btn-ghost-small">รีเซ็ตเป็นข้อมูลตัวอย่าง</button>
+      <div class="sidebar-note">ข้อมูลถูกบันทึกไว้ในเบราว์เซอร์นี้ (localStorage) เท่านั้น — ตัวอย่างสำหรับสาธิตหน้าตาระบบ ยังไม่เชื่อมต่อ HIS/LIS จริง</div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div id="pageTitle" class="page-title">ภาพรวม</div>
+      <div id="pageSub" class="page-sub"></div>
+    </header>
+    <div id="content" class="content"></div>
+  </main>
+
+</div>
+
+<div id="modalOverlay" class="modal-overlay hidden">
+  <div class="modal" id="modalBox"></div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
